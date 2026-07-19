@@ -185,6 +185,8 @@
   },
   "active": "2e8b88b4d0b20b60",
   "lastOpenFiles": [
+    "abc/123.feature.md",
+    "abc",
     "level-1",
     "record-car-accident.feature.md",
     "accidents/record-car-accident.feature.md",
@@ -200,7 +202,6 @@
     "policy",
     "test-featue-2.feature.md",
     "claims/test-featue-2.feature.md",
-    "claims",
     "f-3.feature.md",
     "f-three.feature.md",
     "new-feature-1.feature.md",
