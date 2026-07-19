@@ -22,3 +22,11 @@ Support mobile UI.
 ## Test Scenario Again v1 [published]
 
 blabla
+
+## New Test Scenario v1 [published]
+
+Given: {bank_account} and user {user_name}
+
+| bank_account | user_name |
+| ------------ | --------- |
+| 12321321     | Joe       |
