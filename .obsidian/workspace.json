@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "quote-policy.feature.md",
+                "file": "new-feature-one.feature.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "quote-policy.feature"
+              "title": "new-feature-one.feature"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "quote-policy.feature.md",
+                "file": "new-feature-one.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for quote-policy.feature"
+              "title": "Backlinks for new-feature-one.feature"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "quote-policy.feature.md",
+                "file": "new-feature-one.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from quote-policy.feature"
+              "title": "Outgoing links from new-feature-one.feature"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "quote-policy.feature.md",
+                "file": "new-feature-one.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of quote-policy.feature"
+              "title": "Outline of new-feature-one.feature"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "2e8b88b4d0b20b60",
   "lastOpenFiles": [
+    "quote-policy.feature.md",
     "new-feature-one.feature.md",
-    "record-car-accident.feature.md",
-    "quote-policy.feature.md"
+    "record-car-accident.feature.md"
   ]
 }
