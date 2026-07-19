@@ -8,5 +8,5 @@ When:
 Then:
   Quote is provided
 
-Scenario: quote-three-tiers-of-policy @v1 [saved]
+Scenario: quote-three-tiers-of-policy @v1 [pub]
 Offer Gold, Silver, and Bronse plans.
