@@ -1,2 +1,2 @@
 # data-insurance
-Data dir for car insuracnce company spec.
+Data dir for car insurance company spec.
