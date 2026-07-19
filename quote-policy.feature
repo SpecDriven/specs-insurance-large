@@ -13,3 +13,7 @@ Offer Gold, Silver, and Bronse plans.
 
 Scenario: quote-three-tiers-of-policy @v2 [pub]
 Offer Gold, Silver, and Bronse plans based on customer profile.
+
+Scenario: quote-three-tiers-of-policy @v3 [pub]
+Offer Gold, Silver, and Bronse plans based on customer profile.
+Support mobile UI.
