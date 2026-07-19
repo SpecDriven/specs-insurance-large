@@ -11,14 +11,10 @@
             "id": "2e8b88b4d0b20b60",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "record-car-accident.feature.md",
-                "mode": "preview",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "record-car-accident.feature"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "record-car-accident.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for record-car-accident.feature"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "record-car-accident.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from record-car-accident.feature"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "record-car-accident.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of record-car-accident.feature"
+              "title": "Outline"
             }
           }
         ]
@@ -185,6 +178,8 @@
   },
   "active": "2e8b88b4d0b20b60",
   "lastOpenFiles": [
+    "record-car-accident.feature.md",
+    "accidents/record-car-accident.feature.md",
     "accidents",
     "policy/accidents",
     "policy/quote-policy.feature.md",
@@ -203,7 +198,6 @@
     "new-feature-1.feature.md",
     "test-featue-two.feature.md",
     "quote-policy.feature.md",
-    "new-feature-one.feature.md",
-    "record-car-accident.feature.md"
+    "new-feature-one.feature.md"
   ]
 }
