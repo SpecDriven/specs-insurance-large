@@ -7,3 +7,6 @@ When:
   Customer requests quote
 Then:
   Quote is provided
+
+Scenario: quote-three-tiers-of-policy @v1 [saved]
+Offer Gold, Silver, and Bronse plans.
