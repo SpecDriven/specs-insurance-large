@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "new-feature-one.feature.md",
-                "mode": "preview",
+                "file": "record-car-accident.feature.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "new-feature-one.feature"
+              "title": "record-car-accident.feature"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "new-feature-one.feature.md",
+                "file": "record-car-accident.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for new-feature-one.feature"
+              "title": "Backlinks for record-car-accident.feature"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "new-feature-one.feature.md",
+                "file": "record-car-accident.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from new-feature-one.feature"
+              "title": "Outgoing links from record-car-accident.feature"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "new-feature-one.feature.md",
+                "file": "record-car-accident.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of new-feature-one.feature"
+              "title": "Outline of record-car-accident.feature"
             }
           }
         ]
