@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "policy/quote-policy.feature.md",
+                "file": "accidents/record-car-accident.feature.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "quote-policy.feature"
+              "title": "record-car-accident.feature"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "policy/quote-policy.feature.md",
+                "file": "accidents/record-car-accident.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for quote-policy.feature"
+              "title": "Backlinks for record-car-accident.feature"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "policy/quote-policy.feature.md",
+                "file": "accidents/record-car-accident.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from quote-policy.feature"
+              "title": "Outgoing links from record-car-accident.feature"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "policy/quote-policy.feature.md",
+                "file": "accidents/record-car-accident.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of quote-policy.feature"
+              "title": "Outline of record-car-accident.feature"
             }
           }
         ]
@@ -185,9 +185,9 @@
   },
   "active": "1e72ef17f815c917",
   "lastOpenFiles": [
+    "policy/quote-policy.feature.md",
     "test-featue-2.feature.md",
     "new-feature-1.feature.md",
-    "policy/quote-policy.feature.md",
     "accidents/record-car-accident.feature.md",
     "abc/1234.feature.md",
     "abc/123.feature.md",
