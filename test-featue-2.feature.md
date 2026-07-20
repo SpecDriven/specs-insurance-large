@@ -4,6 +4,6 @@
 
 first body
 
-## Second Sample v1 [proposed]
+## Second Sample v1 [published]
 
 second body
