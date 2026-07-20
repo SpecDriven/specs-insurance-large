@@ -6,6 +6,14 @@
 - **When** customer requests quote
 - **Then** quote is provided
 
+## New Test Scenario v1 [published]
+
+Given: {bank_account} and user {user_name}
+
+| bank_account | user_name |
+| ------------ | --------- |
+| 12321321     | Joe       |
+
 ## quote-three-tiers-of-policy v1 [published]
 
 Offer Gold, Silver, and Bronse plans.
@@ -23,10 +31,13 @@ Support mobile UI.
 
 blabla
 
-## New Test Scenario v1 [published]
+## Traceability Demo v1 [proposed]
 
-Given: {bank_account} and user {user_name}
+- **Given** a quote request
+- **Then** the generated code is covered by tests
 
-| bank_account | user_name |
-| ------------ | --------- |
-| 12321321     | Joe       |
+### Tests
+
+| Test |
+| --- |
+| https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/GatlingCodeGeneratorTest.java |
