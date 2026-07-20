@@ -29,3 +29,12 @@ User enters {ssn} and {first_name} and {last_name}
 ## S2 v1 [published]
 
 sfsfsdfsdfsd
+
+## Table Scenario v2 [proposed]
+
+User enters {ssn} and {first_name} and {last_name}
+
+| ssn      | first_name | last_name |
+| -------- | ---------- | --------- |
+| 12312312 | Julia      | Blue      |
+| 3123331  | Fred       | Jones     |
