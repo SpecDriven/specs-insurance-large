@@ -6,7 +6,7 @@
 - **When** customer requests quote
 - **Then** quote is provided
 
-## New scenario name v1 [proposed]
+## New scenario name v1 [published]
 
 this is a test
 this is {field1} and {field2} 
