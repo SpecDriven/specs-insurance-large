@@ -38,4 +38,4 @@ User enters {ssn} and {first_name} and {last_name}
 | -------- | ---------- | --------- |
 | 12312312 | Julia      | Blue      |
 | 3123331  | Fred       | Jones     |
-| 3213123  | Dale       | Crimson   |
+| 3213123  | Dale       | Crims     |
