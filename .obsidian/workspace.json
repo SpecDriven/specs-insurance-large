@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "f-3.feature.md",
+                "file": "policy/quote-policy.feature.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "f-3.feature"
+              "title": "quote-policy.feature"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "f-3.feature.md",
+                "file": "policy/quote-policy.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for f-3.feature"
+              "title": "Backlinks for quote-policy.feature"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "f-3.feature.md",
+                "file": "policy/quote-policy.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from f-3.feature"
+              "title": "Outgoing links from quote-policy.feature"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "f-3.feature.md",
+                "file": "policy/quote-policy.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of f-3.feature"
+              "title": "Outline of quote-policy.feature"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "1e72ef17f815c917",
   "lastOpenFiles": [
+    "f-3.feature.md",
     "new-feature-1.feature.md",
     "test-featue-2.feature.md",
     "README.md",
@@ -205,7 +206,6 @@
     "level-2",
     "policy",
     "claims/test-featue-2.feature.md",
-    "f-3.feature.md",
     "f-three.feature.md",
     "test-featue-two.feature.md",
     "quote-policy.feature.md",
