@@ -15,7 +15,7 @@
               "state": {
                 "file": "accidents/record-car-accident.feature.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "record-car-accident.feature"
