@@ -6,6 +6,16 @@
 - **When** customer requests quote
 - **Then** quote is provided
 
+## New scenario name v1 [proposed]
+
+this is a test
+this is {field1} and {field2} 
+
+| fierld1 | field1 | field2   |
+| ------- | ------ | -------- |
+| dfdsfsd | fsfsdf | fsfsdfsd |
+| fsfsdf  | fsfsdf | fsfsfsfs |
+
 ## New Test Scenario v1 [published]
 
 Given: {bank_account} and user {user_name}
@@ -31,7 +41,7 @@ Support mobile UI.
 
 blabla
 
-## Traceability Demo v1 [proposed]
+## Traceability Demo v1 [published]
 
 - **Given** a quote request
 - **Then** the generated code is covered by tests
