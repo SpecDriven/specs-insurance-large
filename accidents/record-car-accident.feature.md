@@ -18,7 +18,7 @@ Customer calls accident hotline, talks to the agent and leaves basic accident in
 
 Test 2. Again.
 
-## Table Scenario v1 [saved]
+## Table Scenario v1 [published]
 
 User enters {ssn} and {first_name} and {last_name}
 
