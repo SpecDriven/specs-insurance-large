@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "new-feature-1.feature.md",
+                "file": "f-3.feature.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "new-feature-1.feature"
+              "title": "f-3.feature"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "new-feature-1.feature.md",
+                "file": "f-3.feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for new-feature-1.feature"
+              "title": "Backlinks for f-3.feature"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "new-feature-1.feature.md",
+                "file": "f-3.feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from new-feature-1.feature"
+              "title": "Outgoing links from f-3.feature"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "new-feature-1.feature.md",
+                "file": "f-3.feature.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of new-feature-1.feature"
+              "title": "Outline of f-3.feature"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "1e72ef17f815c917",
   "lastOpenFiles": [
+    "new-feature-1.feature.md",
     "test-featue-2.feature.md",
     "README.md",
     "accidents/record-car-accident.feature.md",
     "policy/quote-policy.feature.md",
-    "new-feature-1.feature.md",
     "abc/1234.feature.md",
     "abc/123.feature.md",
     "abc",
