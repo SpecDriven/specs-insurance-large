@@ -30,7 +30,7 @@ User enters {ssn} and {first_name} and {last_name}
 | -------- | ---------- | --------- |
 | 12312312 | Julia      | Blue      |
 
-## Table Scenario v2 [proposed]
+## Table Scenario v2 [published]
 
 User enters {ssn} and {first_name} and {last_name}
 
