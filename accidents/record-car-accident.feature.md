@@ -18,6 +18,14 @@ Test 2. Again.
 
 Customer may decide not to report
 
+## S1234 v1 [proposed]
+
+As {role} I want to {do} with {artifact}
+
+| role | do     | artifact |
+| ---- | ------ | -------- |
+| user | delete | window   |
+
 ## S2 v1 [published]
 
 sfsfsdfsdfsd
