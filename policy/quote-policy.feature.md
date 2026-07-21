@@ -16,15 +16,16 @@ this is {field1} and {field2}
 | dfdsfsd | fsfsdf | fsfsdfsd |
 | fsfsdf  | fsfsdf | fsfsfsfs |
 
-## New scenario name v2 [proposed]
+## New scenario name v2 [published]
 
 this is a test
 this is {field1} and {field2} 
 
-| field1 | field2   |
-| ------ | -------- |
-| fsfsdf | fsfsdfsd |
-| fsfsdf | fsfsfsfs |
+| field1   | field2   |
+| -------- | -------- |
+| fsfsdf   | fsfsdfsd |
+| fsfsdf   | fsfsfsfs |
+| csadsfsd | fsdfsfsd |
 
 ## New Test Scenario v1 [published]
 
