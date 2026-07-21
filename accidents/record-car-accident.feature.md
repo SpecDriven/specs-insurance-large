@@ -19,3 +19,11 @@ User enters {first_name} {last_name}, {relationship}, and {injured Y/N}
 | first_name      | last_name | relationship |injured Y/N |
 | -------- | ---------- | --------- | --------- |
   | Jay | Ubuntu | Uncle | N |
+
+## Customer provides passenger info v1 [published]
+
+User enters {first_name} {last_name}, {relationship}, and {injured Y/N}
+
+| first_name | last_name | relationship |
+| ---------- | --------- | ------------ |
+| Jay        | Ubuntu    | Uncle        |
