@@ -19,3 +19,9 @@ User enters {first_name} {last_name}, {relationship}, and {injured Y/N}
 | first_name | last_name | relationship |
 | ---------- | --------- | ------------ |
 | Jay        | Ubuntu    | Uncle        |
+
+### Tests
+
+| Test |
+| --- |
+| https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/CLITest.java |
