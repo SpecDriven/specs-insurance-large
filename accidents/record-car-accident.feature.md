@@ -1,5 +1,13 @@
 # Record Car Accident
 
+## Another scenario v1 [proposed]
+
+Employee {employee name}
+
+|          |
+| -------- |
+| 12312312 |
+
 ## Customer calls accident hotline and leaves a voice message v1 [published]
 
 Customer calls accident hotline and leaves a message with accident info.
