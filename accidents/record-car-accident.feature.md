@@ -26,4 +26,3 @@ User enters {first_name} {last_name}, {relationship}, and {injured Y/N}
 | --- |
 | https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/CLITest.java |
 | https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/CLITestBad.java |
-| https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/CLITest2.java |
