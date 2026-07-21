@@ -27,13 +27,14 @@ As a software engineer {name} using {lang}
 | Bill  | Jave |
 | Suzan | C++  |
 
-## S1234 v1 [proposed]
+## S1234 v1 [published]
 
 As {role} I want to {do} with {artifact}
 
-| role | do     | artifact |
-| ---- | ------ | -------- |
-| user | delete | window   |
+| role  | do     | artifact |
+| ----- | ------ | -------- |
+| user  | delete | window   |
+| admin | all    | all      |
 
 ## S2 v1 [published]
 
