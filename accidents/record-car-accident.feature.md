@@ -1,6 +1,6 @@
 # Record Car Accident
 
-## Another scenario v1 [proposed]
+## Another scenario v1 [published]
 
 Employee {employee name}
 
