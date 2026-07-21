@@ -27,6 +27,15 @@ As a software engineer {name} using {lang}
 | Bill  | Jave |
 | Suzan | C++  |
 
+## Riks favorite campt food v1 [proposed]
+
+{camper} likes {food}
+
+| camper | food  |
+| ------ | ----- |
+| RIk    | Ramen |
+|        |       |
+
 ## S1234 v1 [published]
 
 As {role} I want to {do} with {artifact}
