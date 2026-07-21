@@ -18,7 +18,7 @@ Test 2. Again.
 
 Customer may decide not to report
 
-## Hi Stefan v1 [proposed]
+## Hi Stefan v1 [published]
 
 As a software engineer {name} using {lang}
 
