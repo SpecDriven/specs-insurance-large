@@ -25,4 +25,3 @@ User enters {first_name} {last_name}, {relationship}, and {injured Y/N}
 | Test |
 | --- |
 | https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/CLITest.java |
-| https://github.com/vydra/GatlingGen/blob/main/app/src/test/java/ggen/cli/SecondTest.java |
