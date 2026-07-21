@@ -18,6 +18,15 @@ Test 2. Again.
 
 Customer may decide not to report
 
+## Hi Stefan v1 [proposed]
+
+As a software engineer {name} using {lang}
+
+| name  | lang |
+| ----- | ---- |
+| Bill  | Jave |
+| Suzan | C++  |
+
 ## S1234 v1 [proposed]
 
 As {role} I want to {do} with {artifact}
