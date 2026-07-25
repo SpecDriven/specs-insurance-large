@@ -1,3 +1,5 @@
+# 
+
 git diff# Quote Policy
 
 ## Basic Quote v1 [published]
@@ -6,7 +8,7 @@ git diff# Quote Policy
 - **When** customer requests quote
 - **Then** quote is provided
 
-## Hi There! v1 [proposed]
+## Hi There! v1 [published]
 
 as employee {emp} w salary {sal}
 
