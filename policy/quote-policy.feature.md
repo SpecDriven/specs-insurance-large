@@ -6,6 +6,14 @@
 - **When** customer requests quote
 - **Then** quote is provided
 
+## Hi There! v1 [proposed]
+
+as employee {emp} w salary {sal}
+
+| emp | sal   |
+| --- | ----- |
+| Joe | 10000 |
+
 ## New scenario name v1 [published]
 
 this is a test
