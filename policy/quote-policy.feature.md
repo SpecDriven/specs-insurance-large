@@ -4,6 +4,8 @@
 
 # 
 
+# 
+
 git diff# Quote Policy
 
 ## Basic Quote v1 [published]
