@@ -39,6 +39,16 @@ this is {field1} and {field2}
 | fsfsdf   | fsfsfsfs |
 | csadsfsd | fsdfsfsd |
 
+## New scenario name v3 [proposed]
+
+this is a test 3
+this is {field1} and {field2} 
+
+| fierld1 | field1 | field2   |
+| ------- | ------ | -------- |
+| dfdsfsd | fsfsdf | fsfsdfsd |
+| fsfsdf  | fsfsdf | fsfsfsfs |
+
 ## New Test Scenario v1 [published]
 
 Given: {bank_account} and user {user_name}
