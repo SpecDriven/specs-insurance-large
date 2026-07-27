@@ -1,6 +1,6 @@
 # Collect Premium
 
-## Failed autopay starts the grace period v1 [published]
+## Failed autopay starts the grace period @v1 [published]
 
 - **Given** an installment due today
 - **When** the autopay charge is declined
@@ -8,7 +8,7 @@
 - **And** a 10-day grace period starts
 - **And** the insured is notified by email and text
 
-## Monthly installment plan v1 [published]
+## Monthly installment plan @v1 [published]
 
 - **Given** a bound policy with a $600 six-month premium
 - **When** the insured chooses the monthly installment plan
@@ -21,7 +21,7 @@
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
-## Unpaid balance triggers a cancellation notice v1 [proposed]
+## Unpaid balance triggers a cancellation notice @v1 [proposed]
 
 - **Given** an installment still unpaid at the end of the grace period
 - **When** the nightly billing job runs

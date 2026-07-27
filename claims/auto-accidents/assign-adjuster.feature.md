@@ -2,7 +2,7 @@
 
 Route each newly opened claim to the right adjuster.
 
-## Assign by estimated damage v1 [published]
+## Assign by estimated damage @v1 [published]
 
 - **Given** a newly opened collision claim
 - **When** the initial damage estimate is recorded
@@ -14,7 +14,7 @@ Route each newly opened claim to the right adjuster.
 | $5,000 – $25,000 | field adjuster                            |
 | over $25,000     | senior field adjuster + supervisor review |
 
-## Injury claims go to a casualty adjuster v1 [proposed]
+## Injury claims go to a casualty adjuster @v1 [proposed]
 
 - **Given** a newly opened claim
 - **When** the first notice of loss mentions any injury

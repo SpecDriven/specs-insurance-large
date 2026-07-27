@@ -1,6 +1,6 @@
 # Renew Auto Policy
 
-## Automatic renewal offer v1 [published]
+## Automatic renewal offer @v1 [published]
 
 - **Given** an in-force policy expiring in 45 days
 - **And** the account has no unpaid balance
@@ -8,7 +8,7 @@
 - **Then** a renewal offer is generated at current rates
 - **And** the offer is sent to the named insured
 
-## Non-renewal for claim frequency v1 [proposed]
+## Non-renewal for claim frequency @v1 [proposed]
 
 - **Given** a policy with 2 or more at-fault claims during the current term
 - **When** the renewal review runs 60 days before expiration
