@@ -8,7 +8,7 @@
 - **Then** a renewal offer is generated at current rates
 - **And** the offer is sent to the named insured
 
-## Non-renewal for claim frequency @v1 [proposed]
+## Non-renewal for claim frequency @v1 [published]
 
 - **Given** a policy with 2 or more at-fault claims during the current term
 - **When** the renewal review runs 60 days before expiration
