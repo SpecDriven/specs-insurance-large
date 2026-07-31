@@ -14,7 +14,7 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 | $300,000          | $2,500     | $1,180         |
 | $500,000          | $1,000     | $2,050         |
 
-## Flood damage is excluded @v1 [proposed]
+## Flood damage is excluded @v1 [published]
 
 - **Given** the home sits in a FEMA special flood hazard area
 - **When** the quote is presented
