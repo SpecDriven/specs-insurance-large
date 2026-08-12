@@ -21,7 +21,7 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 - **Then** it prominently notes that flood damage is excluded
 - **And** the prospect is referred to a separate flood policy
 
-## Old roof requires inspection @v1 [published]
+## Old roof requires inspection @v1 [proposed]
 
 - **Given** the roof is more than 20 years old
 - **When** the prospect requests a quote
