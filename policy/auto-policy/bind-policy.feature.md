@@ -17,6 +17,10 @@ Turning an accepted quote into an in-force policy.
 - **When** they request an effective date earlier than today
 - **Then** binding is refused with the reason "coverage cannot start in the past"
 
+## S3 @v1 [published]
+
+test
+
 ## Uninsured motorist rejection form @v1 [published]
 
 - **Given** a prospect declines uninsured motorist coverage
