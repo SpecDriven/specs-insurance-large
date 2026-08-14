@@ -18,6 +18,8 @@ Route each newly opened claim to the right adjuster.
 
 Under these circumstances, the case must be escalated.
 
+* When this is a VIP customer with a new car.
+
 ## Injury claims go to a casualty adjuster @v1 [proposed]
 
 - **Given** a newly opened claim
