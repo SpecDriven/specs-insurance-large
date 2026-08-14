@@ -10,7 +10,7 @@ policy and prorates the premium difference from the endorsement date.
 - **Then** the additional premium is prorated over the remaining 4 months
 - **And** a revised declarations page is issued
 
-## Change garaging address @v1 [proposed]
+## Change garaging address @v1 [published]
 
 - **Given** an in-force auto policy
 - **When** the insured moves the garaging address to a different ZIP code
