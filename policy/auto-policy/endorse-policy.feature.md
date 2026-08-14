@@ -22,4 +22,3 @@ policy and prorates the premium difference from the endorsement date.
 - **Given** an in-force auto policy covering 2 vehicles
 - **When** the insured removes one vehicle
 - **Then** the unearned premium for that vehicle is credited to the account
-
