@@ -23,6 +23,3 @@ policy and prorates the premium difference from the endorsement date.
 - **When** the insured removes one vehicle
 - **Then** the unearned premium for that vehicle is credited to the account
 
-| name  | salary |
-| ----- | ------ |
-| Manny | 500000 |
