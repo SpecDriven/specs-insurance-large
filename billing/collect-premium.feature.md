@@ -21,6 +21,10 @@
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
+## S2 @v1 [proposed]
+
+zyx
+
 ## Unpaid balance triggers a cancellation notice @v1 [proposed]
 
 - **Given** an installment still unpaid at the end of the grace period
