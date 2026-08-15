@@ -29,7 +29,7 @@ zyx
 
 t2
 
-## U2-s4 @v1 [proposed]
+## U2-s4 @v1 [published]
 
 eee
 
