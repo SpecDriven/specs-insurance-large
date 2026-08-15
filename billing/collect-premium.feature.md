@@ -27,3 +27,7 @@
 - **When** the nightly billing job runs
 - **Then** a notice of cancellation for non-payment is issued (policy/auto-policy/cancel-policy.feature.md)
 - **And** paying the past-due amount before the cancellation date rescinds the notice
+
+| Employee | Salary |
+| -------- | ------ |
+| Yulia    | 200000 |
