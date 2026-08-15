@@ -25,6 +25,10 @@
 
 zyx
 
+## U2-s4 @v1 [proposed]
+
+eee
+
 ## Unpaid balance triggers a cancellation notice @v1 [proposed]
 
 - **Given** an installment still unpaid at the end of the grace period
