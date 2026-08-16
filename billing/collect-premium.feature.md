@@ -33,6 +33,8 @@ fsfsdfsd
 
 fvfgfgf
 
+## S6 @v2 [published]
+
 ## U1-S3 @v1 [proposed]
 
 t2
