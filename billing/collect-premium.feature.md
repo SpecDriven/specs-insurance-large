@@ -29,6 +29,10 @@ zyx
 
 fsfsdfsd
 
+## S6 @v1 [proposed]
+
+fvfgfgf
+
 ## U1-S3 @v1 [proposed]
 
 t2
@@ -37,7 +41,7 @@ t2
 
 eee
 
-## Unpaid balance triggers a cancellation notice @v1 [proposed]
+## Unpaid balance triggers a cancellation notice @v1 [published]
 
 - **Given** an installment still unpaid at the end of the grace period
 - **When** the nightly billing job runs
