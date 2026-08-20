@@ -2,7 +2,7 @@
 
 First notice of loss (FNOL) for collision and comprehensive claims.
 
-## Accident on a lapsed policy @v1 [proposed]
+## Accident on a lapsed policy @v1 [published]
 
 - **Given** a policy that was cancelled for non-payment on June 1
 - **When** the former insured reports an accident dated June 10
@@ -23,3 +23,11 @@ First notice of loss (FNOL) for collision and comprehensive claims.
 - **When** a live agent records the accident details on the insured's behalf
 - **Then** a claim is opened exactly as if it had been reported online
 - **And** the agent reads the claim number back to the caller
+
+## Tims' Spec @v1 [proposed]
+
+hello there
+
+| name | position |
+| ---- | -------- |
+| Tim  | Guru     |
