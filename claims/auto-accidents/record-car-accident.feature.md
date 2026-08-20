@@ -24,7 +24,7 @@ First notice of loss (FNOL) for collision and comprehensive claims.
 - **Then** a claim is opened exactly as if it had been reported online
 - **And** the agent reads the claim number back to the caller
 
-## Tims' Spec @v1 [proposed]
+## Tims' Spec @v1 [published]
 
 hello there
 
