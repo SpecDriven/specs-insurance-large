@@ -21,6 +21,14 @@ Turning an accepted quote into an in-force policy.
 
 test
 
+## S3 @v2 [published]
+
+some stuff
+
+| name | position |
+| ---- | -------- |
+| John | manager  |
+
 ## Uninsured motorist rejection form @v1 [published]
 
 - **Given** a prospect declines uninsured motorist coverage
