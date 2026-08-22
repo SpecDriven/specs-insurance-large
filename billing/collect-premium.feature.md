@@ -33,8 +33,6 @@ fsfsdfsd
 
 fvfgfgf
 
-## S6 @v2 [published]
-
 ## T8 @v1 [published]
 
 fsfsfsdfsdfsd
