@@ -27,6 +27,8 @@ zzzzz
 
 ## S6 @v1 [proposed]
 
+[Jira:ABC-1](https://jira.com/ABC-123)
+
 fvfgfgf
 
 ## U2-s4 @v1 [published]
