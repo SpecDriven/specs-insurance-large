@@ -25,17 +25,9 @@ zzzzz
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
-## S5 @v1 [proposed]
-
-fsfsdfsd
-
 ## S6 @v1 [proposed]
 
 fvfgfgf
-
-## U1-S3 @v1 [proposed]
-
-t2
 
 ## U2-s4 @v1 [published]
 
