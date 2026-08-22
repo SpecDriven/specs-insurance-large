@@ -25,7 +25,7 @@ zzzzz
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
-## S6 @v1 [proposed]
+## S6 @v1 [published]
 
 [Jira:ABC-123](https://jira.com/ABC-123)
 
