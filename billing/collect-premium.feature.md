@@ -27,7 +27,7 @@ zzzzz
 
 ## S6 @v1 [proposed]
 
-[Jira:ABC-1](https://jira.com/ABC-123)
+[Jira:ABC-123](https://jira.com/ABC-123)
 
 fvfgfgf
 
