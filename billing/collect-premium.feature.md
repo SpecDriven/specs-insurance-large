@@ -27,6 +27,14 @@ zzzzz
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
+## S3 @v1 [proposed]
+
+fsdkfjdskfdslfmsdl
+
+| Name  | Salary |
+| ----- | ------ |
+| Chris | 100000 |
+
 ## Unpaid balance triggers a cancellation notice @v1 [published]
 
 - **Given** an installment still unpaid at the end of the grace period
