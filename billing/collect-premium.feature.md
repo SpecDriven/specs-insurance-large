@@ -2,6 +2,8 @@
 
 [Jira:ABC-321](https://jira.com/ABC-321)
 
+**Assigned:** Dana Whitfield
+
 ## Draft Scenario @v1 [proposed]
 
 zzzzz
