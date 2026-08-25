@@ -1,7 +1,5 @@
 # Retention and Household Lifetime Value
 
-**Assigned:** Aisha Bello
-
 ## Why
 
 We spend heavily to acquire a customer and then treat every renewal as a
