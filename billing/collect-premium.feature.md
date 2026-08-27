@@ -10,6 +10,8 @@ zzzzz
 
 ## Failed autopay starts the grace period @v1 [published]
 
+[Jira:ABC-222](https://jira.com/ABC-222)
+
 - **Given** an installment due today
 - **When** the autopay charge is declined
 - **Then** the charge is retried in 3 days
