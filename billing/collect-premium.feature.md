@@ -2,9 +2,9 @@
 
 [Jira:ABC-321](https://jira.com/ABC-321)
 
-**Assigned:** Dana Whitfield
+**Assigned:** Stefan Rudi
 
-## Draft Scenario @v1 [proposed]
+## Draft Scenario @v1 [published]
 
 zzzzz
 
