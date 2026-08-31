@@ -4,6 +4,8 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 
 ## Basic homeowners quote @v1 [published]
 
+[Jira:INS-123](https://jira.com/INS-123)
+
 - **Given** a prospect provides the home's address, year built, construction type, and desired dwelling coverage
 - **When** the prospect requests a quote
 - **Then** an annual premium is quoted
@@ -26,13 +28,6 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 - **When** the quote is presented
 - **Then** it prominently notes that flood damage is excluded
 - **And** the prospect is referred to a separate flood policy
-
-## Jeff' s Policy @v1 [proposed]
-
-[Jira:ABC-123](https://jira.com/ABC-123)
-
-fsdfsfsdfsd
-sdflkjsdlkfjdsklfjds
 
 ## Old roof requires inspection @v1 [published]
 
