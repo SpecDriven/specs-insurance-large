@@ -29,6 +29,10 @@ Turning an accepted quote into an in-force policy.
 | --- |
 | https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/BindAutoPolicyTest.java#L103 |
 
+## Hi Bill @v1 [proposed]
+
+fsdfdsfdsfds
+
 ## Uninsured motorist rejection form @v1 [published]
 
 - **Given** a prospect declines uninsured motorist coverage
