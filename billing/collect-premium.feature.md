@@ -4,10 +4,6 @@
 
 **Assigned:** Stefan Rudi
 
-## Draft Scenario @v1 [published]
-
-zzzzz
-
 ## Failed autopay starts the grace period @v1 [published]
 
 [Jira:ABC-224](https://jira.com/ABC-224)
