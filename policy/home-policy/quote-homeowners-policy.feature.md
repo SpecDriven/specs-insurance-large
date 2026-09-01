@@ -29,7 +29,7 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 - **Then** it prominently notes that flood damage is excluded
 - **And** the prospect is referred to a separate flood policy
 
-## Hi Roman @v1 [proposed]
+## Hi Roman @v1 [published]
 
 | Name  | Title      |
 | ----- | ---------- |
