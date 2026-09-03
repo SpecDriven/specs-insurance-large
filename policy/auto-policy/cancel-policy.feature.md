@@ -7,7 +7,11 @@
 - **Then** the policy is cancelled effective the date stated on the notice
 - **And** any unearned premium is refunded
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/CancelAutoPolicyTest.java#L69 ]
+### Tests
+
+| Test |
+| --- |
+| https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/CancelAutoPolicyTest.java#L69 |
 
 ## Insured requests cancellation @v1 [published]
 
@@ -16,4 +20,8 @@
 - **Then** the policy is cancelled on that date
 - **And** unearned premium is refunded pro rata (billing/refund-unearned-premium.feature.md)
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/CancelAutoPolicyTest.java#L38 ]
+### Tests
+
+| Test |
+| --- |
+| https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/CancelAutoPolicyTest.java#L38 |
