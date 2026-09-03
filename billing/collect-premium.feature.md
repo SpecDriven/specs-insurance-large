@@ -14,7 +14,11 @@
 - **And** a 10-day grace period starts
 - **And** the insured is notified by email and text
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L78 ]
+### Tests
+
+| Test |
+| --- |
+| https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L78 |
 
 ## Monthly installment plan @v1 [published]
 
@@ -29,7 +33,11 @@
 | Two-pay         | 2        | $3                      |
 | Monthly autopay | 6        | $5                      |
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L35 ]
+### Tests
+
+| Test |
+| --- |
+| https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L35 |
 
 ## Unpaid balance triggers a cancellation notice @v1 [published]
 
