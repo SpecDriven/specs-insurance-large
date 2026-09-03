@@ -8,7 +8,11 @@
 - **Then** a renewal offer is generated at current rates
 - **And** the offer is sent to the named insured
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/RenewAutoPolicyTest.java#L39 ]
+### Tests
+
+| Test |
+| --- |
+| https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/RenewAutoPolicyTest.java#L39 |
 
 ## Non-renewal for claim frequency @v1 [published]
 
