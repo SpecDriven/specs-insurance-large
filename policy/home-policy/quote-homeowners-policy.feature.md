@@ -25,6 +25,15 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 - **Then** it prominently notes that flood damage is excluded
 - **And** the prospect is referred to a separate flood policy
 
+## Hi Dennis @v1 [proposed]
+
+Given: Dennis is on the road
+....
+
+| Employee | Salary    |
+| -------- | --------- |
+| Dennis   | 100000000 |
+
 ## Old roof requires inspection @v1 [published]
 
 - **Given** the roof is more than 20 years old
