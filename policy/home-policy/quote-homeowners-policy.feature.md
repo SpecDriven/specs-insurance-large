@@ -32,7 +32,7 @@ Given: Dennis is on the road
 
 | Employee | Salary    |
 | -------- | --------- |
-| Dennis   | 100000000 |
+| Dennis   | 200000 |
 
 ## Old roof requires inspection @v1 [published]
 
