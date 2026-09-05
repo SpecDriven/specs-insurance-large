@@ -17,3 +17,4 @@
 - **Then** the vehicle is declared a total loss
 - **And** the insured is offered the actual cash value minus the deductible
 - **And** the title transfers to the company on acceptance
+-
