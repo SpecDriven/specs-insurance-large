@@ -8,5 +8,5 @@
     { "name": "Aisha Bello", "email": "aisha.bello@acme-insurance.example" }
   ]
 },
-    { "code-repo": "../specdriven_app" }
+  "code-repo": "../specdriven_app"
 }
