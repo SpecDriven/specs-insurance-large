@@ -1,4 +1,5 @@
 {
+  {
   "members": [
     { "name": "Dana Whitfield", "email": "dana.whitfield@acme-insurance.example" },
     { "name": "Miguel Santos", "email": "miguel.santos@acme-insurance.example" },
@@ -6,4 +7,6 @@
     { "name": "Jonas Berg", "email": "jonas.berg@acme-insurance.example" },
     { "name": "Aisha Bello", "email": "aisha.bello@acme-insurance.example" }
   ]
+},
+    { "code-repo": "../specdriven_app" }
 }
