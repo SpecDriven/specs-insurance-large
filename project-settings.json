@@ -6,5 +6,5 @@
     { "name": "Jonas Berg", "email": "jonas.berg@acme-insurance.example" },
     { "name": "Aisha Bello", "email": "aisha.bello@acme-insurance.example" }
   ],
-  "code-repo": "../specdriven_app"
+  "code-repo": "../insurance-java"
 }
