@@ -8,7 +8,7 @@
 - **Then** $3,700 is paid directly to the repair shop
 - **And** the insured is notified that the $500 deductible is due to the shop
 
-[test: https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/claims/SettleCollisionClaimTest.java#L36 ]
+[test: approveRepairEstimate : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/claims/SettleCollisionClaimTest.java#L36 ]
 
 ## Declare a total loss @v1 [proposed]
 
