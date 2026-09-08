@@ -2,6 +2,8 @@
 
 **Assigned:** Dana Whitfield
 
+**Status:** Done
+
 Underwriters decline old roofs on homeowners quotes, and each of them has a
 slightly different age in mind. The rule exists; it just lives in five heads.
 
