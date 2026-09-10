@@ -31,6 +31,11 @@
 
 [test: monthlyInstallmentPlan : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L35 ]
 
+## test excalidraw @v1 [proposed]
+
+test of excalidraw
+![diagram.excalidraw](/api/images/diagram-excalidraw-60753914.svg)
+
 ## Unpaid balance triggers a cancellation notice @v1 [published]
 
 - **Given** an installment still unpaid at the end of the grace period
