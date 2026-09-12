@@ -4,6 +4,8 @@
 
 ## The Situation
 
+![test-diagram.excalidraw](/api/images/test-diagram-excalidraw-a896597a.svg)
+
 Policy administration, billing, and claims each hold their own copy of the
 customer, and the copies disagree. Rate changes take a quarter because the
 rating logic is spread between the policy system, a spreadsheet, and a batch
