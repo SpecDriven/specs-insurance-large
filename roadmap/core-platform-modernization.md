@@ -4,7 +4,7 @@
 
 ## The Situation
 
-![test-diagram.excalidraw](/api/images/test-diagram-excalidraw-a896597a.svg)
+![test-diagram.excalidraw](/api/images/test-diagram-excalidraw-514e9db0.svg)
 
 Policy administration, billing, and claims each hold their own copy of the
 customer, and the copies disagree. Rate changes take a quarter because the
