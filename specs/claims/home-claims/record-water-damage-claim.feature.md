@@ -17,7 +17,7 @@ coverage-sensitive: sudden-and-accidental is covered, gradual is not.
 - **Given** an inspection finds the damage came from a slow leak over several months
 - **When** the adjuster completes the coverage review
 - **Then** the claim is denied under the maintenance exclusion
-- **And** the denial letter cites the policy language and the inspection findings
+- **And** the denial letter cites the @language and the inspection findings
 
 ## Surface flood is referred to the flood policy @v1 [proposed]
 
