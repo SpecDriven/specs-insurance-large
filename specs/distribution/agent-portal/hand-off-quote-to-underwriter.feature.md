@@ -13,6 +13,8 @@ keeps visibility of the submission throughout.
 - **Then** the decline reason and class code are recorded on the submission
 - **And** the producer is advised the risk may be placed through surplus lines
 
+[test: declinedSubmissionRecordsAnAppetiteReason : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/HandOffQuoteToUnderwriterTest.java#L159 ]
+
 ## Missing loss runs stop the underwriting clock @v1 [published]
 
 - **Given** a commercial submission requiring 5 years of loss runs
@@ -20,12 +22,16 @@ keeps visibility of the submission throughout.
 - **Then** the submission moves to awaiting-information and the decision clock pauses
 - **And** the clock resumes when the producer uploads the loss runs
 
+[test: missingLossRunsStopTheUnderwritingClock : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/HandOffQuoteToUnderwriterTest.java#L121 ]
+
 ## Premium above binding authority is referred @v1 [published]
 
 - **Given** a producer with $25,000 binding authority per policy
 - **When** a commercial auto quote rates at $38,400 annual premium
 - **Then** the quote is referred to an underwriter rather than bound
 - **And** the referral reason "exceeds producer binding authority" is attached
+
+[test: premiumAboveBindingAuthorityIsReferred : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/HandOffQuoteToUnderwriterTest.java#L36 ]
 
 ## Producer withdraws a pending referral @v1 [proposed]
 
@@ -46,6 +52,8 @@ keeps visibility of the submission throughout.
 | Standard      | under $50,000         | 4 business hours    | 2 days       |
 | Complex       | $50,000 – $250,000    | 8 business hours    | 5 days       |
 | Large account | over $250,000         | 1 business day      | 10 days      |
+
+[test: referralServiceLevelIsTrackedAndEscalated : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/HandOffQuoteToUnderwriterTest.java#L55 ]
 
 ## Underwriter counteroffer returns to the producer @v1 [proposed]
 

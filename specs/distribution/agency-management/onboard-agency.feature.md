@@ -15,12 +15,16 @@ ownership before an appointment is issued
 - **Then** the agency record is created in pending-appointment status
 - **And** a distribution manager is assigned to review within 5 business days
 
+[test: agencySubmitsACompleteOnboardingPacket : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OnboardAgencyTest.java#L27 ]
+
 ## Duplicate tax identification number is rejected @v1 [published]
 
 - **Given** an existing appointed agency using federal tax ID 34-8871209
 - **When** a second onboarding packet arrives with the same tax ID
 - **Then** the submission is rejected as a duplicate
 - **And** the submitter is directed to add a branch location to the existing agency instead
+
+[test: duplicateTaxIdentificationNumberIsRejected : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OnboardAgencyTest.java#L49 ]
 
 ## Insufficient errors and omissions limits hold the file @v1 [proposed]
 
@@ -44,6 +48,8 @@ ownership before an appointment is issued
 - **Then** onboarding is declined
 - **And** the decline reason "adverse regulatory history" is recorded on the agency record
 
+[test: principalWithAPriorLicenseRevocationIsDeclined : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OnboardAgencyTest.java#L68 ]
+
 ## Production commitment sets the initial agency tier @v1 [published]
 
 - **Given** an agency that projects $750,000 of new written premium in its first year
@@ -56,6 +62,8 @@ ownership before an appointment is issued
 | Bronze   | under $250,000                | 10%                     | no                  |
 | Silver   | $250,000 – $1,000,000         | 12%                     | yes                 |
 | Gold     | over $1,000,000               | 14%                     | yes                 |
+
+[test: productionCommitmentSetsTheInitialAgencyTier : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OnboardAgencyTest.java#L84 ]
 
 ## Welcome kit is issued on approval @v1 [proposed]
 

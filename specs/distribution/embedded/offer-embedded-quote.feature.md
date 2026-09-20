@@ -20,12 +20,16 @@ what it already knows and Acme returns a bindable price in one call
 - **Then** the bind is refused as an expired token
 - **And** a fresh quote may be requested at current rates
 
+[test: embeddedQuoteTokenExpiresIn24Hours : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OfferEmbeddedQuoteTest.java#L109 ]
+
 ## Partner may not see or alter rating factors @v1 [published]
 
 - **Given** an embedded quote returned to a partner
 - **When** the partner inspects the response payload
 - **Then** only the premium, coverage summary, and a quote token are present
 - **And** no rating factors, tier assignments, or credit-based attributes are disclosed
+
+[test: partnerMayNotSeeOrAlterRatingFactors : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OfferEmbeddedQuoteTest.java#L55 ]
 
 ## Partner outage does not block the partner's own checkout @v1 [proposed]
 
@@ -41,12 +45,16 @@ what it already knows and Acme returns a bindable price in one call
 - **Then** a renters premium is returned with $15,000 personal property and $100,000 liability
 - **And** the quote is valid until the lease start date
 
+[test: rentersQuoteIsOfferedInsideALeasingCheckout : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OfferEmbeddedQuoteTest.java#L32 ]
+
 ## Required disclosures are shown before the customer accepts @v1 [published]
 
 - **Given** an embedded renters offer displayed in a partner checkout
 - **When** the customer moves to accept coverage
 - **Then** the state-required producer disclosure and the coverage summary are shown in the partner's flow
 - **And** acceptance is not recorded until both are acknowledged
+
+[test: requiredDisclosuresAreShownBeforeTheCustomerAccepts : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/OfferEmbeddedQuoteTest.java#L76 ]
 
 ## Risk outside appetite returns a graceful no-offer @v1 [proposed]
 

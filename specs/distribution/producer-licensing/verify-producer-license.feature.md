@@ -27,6 +27,8 @@ Verification runs against the NIPR producer database nightly and on demand.
 - **Then** the record is flagged for manual reconciliation rather than failed
 - **And** production continues for 30 days while the mismatch is resolved
 
+[test: nameMismatchIsRoutedForManualReconciliation : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/VerifyProducerLicenseTest.java#L52 ]
+
 ## Non-resident license is required for out-of-state risks @v1 [published]
 
 - **Given** a producer resident in Ohio submitting a risk garaged in Kentucky
@@ -34,12 +36,16 @@ Verification runs against the NIPR producer database nightly and on demand.
 - **Then** an active Kentucky non-resident license is required
 - **And** the Ohio resident license alone is not sufficient
 
+[test: nonResidentLicenseIsRequiredForOutOfStateRisks : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/VerifyProducerLicenseTest.java#L75 ]
+
 ## Producer license verified against the national registry @v1 [published]
 
 - **Given** a producer with national producer number 8841207
 - **When** the licensing service queries the national registry
 - **Then** the producer's Ohio property and casualty license is confirmed active
 - **And** the verification result is stamped with the query date
+
+[test: producerLicenseVerifiedAgainstTheNationalRegistry : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/VerifyProducerLicenseTest.java#L29 ]
 
 ## Registry outage falls back to the last good verification @v1 [proposed]
 
@@ -55,3 +61,5 @@ Verification runs against the NIPR producer database nightly and on demand.
 - **When** the suspension appears in the nightly registry feed
 - **Then** the producer's binding authority is revoked effective 14 May 2026
 - **And** the producer's agency principal is notified by email
+
+[test: suspendedLicenseHaltsBindingTheSameDay : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/VerifyProducerLicenseTest.java#L97 ]

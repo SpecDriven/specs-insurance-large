@@ -11,12 +11,16 @@ partner present coverage at all.
 - **Then** both keys are accepted for a 14-day overlap window
 - **And** the old key stops working when the window closes
 
+[test: credentialRotationHappensWithoutDowntime : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/IntegratePartnerApiTest.java#L81 ]
+
 ## Partner is certified in the sandbox before production access @v1 [published]
 
 - **Given** a partner that has completed the integration test suite in the sandbox
 - **When** the integration manager reviews the certification results
 - **Then** production credentials are issued scoped to renters and personal auto
 - **And** the partner's first 30 days are monitored at a reduced rate limit
+
+[test: partnerIsCertifiedInTheSandboxBeforeProductionAccess : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/IntegratePartnerApiTest.java#L31 ]
 
 ## Partner must hold or borrow a licensed entity @v1 [proposed]
 
@@ -32,12 +36,16 @@ partner present coverage at all.
 - **Then** excess requests receive a throttled response with a retry-after value
 - **And** sustained throttling for 15 minutes opens an integration incident
 
+[test: rateLimitingProtectsTheQuotingService : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/IntegratePartnerApiTest.java#L116 ]
+
 ## Schema change is versioned rather than breaking @v1 [published]
 
 - **Given** partners integrated against version 2 of the quote endpoint
 - **When** a new required field is introduced
 - **Then** the change is published as version 3 and version 2 continues to serve
 - **And** version 2 is retired no sooner than 12 months after version 3 is available
+
+[test: schemaChangeIsVersionedRatherThanBreaking : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/IntegratePartnerApiTest.java#L145 ]
 
 ## Suspended partner stops receiving offers @v1 [proposed]
 

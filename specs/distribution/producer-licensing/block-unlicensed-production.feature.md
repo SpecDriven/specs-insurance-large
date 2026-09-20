@@ -11,6 +11,8 @@ check at quote, bind, and commission payment.
 - **Then** the bind succeeds under the principal's license
 - **And** the principal is recorded as the producer of record
 
+[test: agencyPrincipalMayBindOnBehalfOfAnUnlicensedStaffMember : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/BlockUnlicensedProductionTest.java#L58 ]
+
 ## Commission is withheld on business written without authority @v1 [published]
 
 - **Given** a policy bound on 4 February 2026 by a producer whose license lapsed 31 January 2026
@@ -18,12 +20,16 @@ check at quote, bind, and commission payment.
 - **Then** commission on that policy is withheld pending compliance review
 - **And** the policy itself remains in force to protect the insured
 
+[test: commissionIsWithheldOnBusinessWrittenWithoutAuthority : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/BlockUnlicensedProductionTest.java#L137 ]
+
 ## Emergency override requires compliance approval @v1 [published]
 
 - **Given** a blocked bind where the producer holds a license the registry has not yet published
 - **When** a compliance officer approves a 72-hour override with documented evidence
 - **Then** the bind is permitted once
 - **And** the override expires automatically after 72 hours
+
+[test: emergencyOverrideRequiresComplianceApproval : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/BlockUnlicensedProductionTest.java#L86 ]
 
 ## Quoting is permitted while binding is blocked @v1 [proposed]
 
@@ -45,3 +51,5 @@ check at quote, bind, and commission payment.
 - **When** the producer attempts to bind a quote (policy/auto-policy/bind-policy.feature.md)
 - **Then** the bind is refused
 - **And** the attempt is written to the compliance log with the producer number and state
+
+[test: unlicensedProducerCannotBind : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/BlockUnlicensedProductionTest.java#L35 ]

@@ -11,6 +11,8 @@ access granted to them (manage-portal-user-access.feature.md).
 - **Then** in-force policy count and written premium are shown for every producer at the agency
 - **And** figures are shown as of the previous night's close
 
+[test: agencyPrincipalSeesTheWholeAgencyBook : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ViewBookOfBusinessTest.java#L33 ]
+
 ## Export of the book is limited and logged @v1 [published]
 
 - **Given** a producer requesting a comma-separated export of the book
@@ -18,12 +20,16 @@ access granted to them (manage-portal-user-access.feature.md).
 - **Then** the file omits full policyholder account numbers and dates of birth
 - **And** the export request is written to the audit log with the requesting user and timestamp
 
+[test: exportOfTheBookIsLimitedAndLogged : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ViewBookOfBusinessTest.java#L106 ]
+
 ## Loss ratio is reported on an earned premium basis @v1 [published]
 
 - **Given** an agency with $2,100,000 earned premium and $987,000 incurred loss including loss adjustment expense
 - **When** the loss ratio panel is displayed
 - **Then** a 47% loss ratio is shown for the trailing twelve months
 - **And** claims with open reserves are included at their current reserve value
+
+[test: lossRatioIsReportedOnAnEarnedPremiumBasis : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ViewBookOfBusinessTest.java#L64 ]
 
 ## Producer sees only their own policies @v1 [proposed]
 
@@ -38,6 +44,8 @@ access granted to them (manage-portal-user-access.feature.md).
 - **When** the producer filters to the renewal pipeline
 - **Then** policies with an expiration date within 60 days are listed first
 - **And** any policy carrying a non-renewal notice is marked (policy/auto-policy/renew-policy.feature.md)
+
+[test: renewalPipelineHighlightsPoliciesInside60Days : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ViewBookOfBusinessTest.java#L136 ]
 
 ## Terminated agency retains read-only visibility @v1 [proposed]
 

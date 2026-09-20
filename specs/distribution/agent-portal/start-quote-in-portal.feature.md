@@ -19,6 +19,8 @@ anything outside appetite to an underwriter
 - **Then** the applicant's consent to the report order is captured before the order is placed
 - **And** the consent record is retained with the quote
 
+[test: motorVehicleReportOrderIsDisclosedToTheApplicant : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/StartQuoteInPortalTest.java#L77 ]
+
 ## Prior carrier information drives the transfer discount @v1 [proposed]
 
 - **Given** an applicant with 3 years of continuous prior coverage at 100/300 limits
@@ -33,6 +35,8 @@ anything outside appetite to an underwriter
 - **Then** a six-month premium is returned for each available plan (policy/auto-policy/quote-policy.feature.md)
 - **And** the quote is saved under the producer's agency code
 
+[test: producerQuotesPersonalAutoFromThePortal : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/StartQuoteInPortalTest.java#L30 ]
+
 ## Quote outside the producer's state authority is refused @v1 [published]
 
 - **Given** a producer appointed only in Ohio
@@ -40,12 +44,16 @@ anything outside appetite to an underwriter
 - **Then** the quote is not generated
 - **And** the producer is told a Kentucky appointment is required
 
+[test: quoteOutsideTheProducersStateAuthorityIsRefused : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/StartQuoteInPortalTest.java#L57 ]
+
 ## Roof age over 20 years routes a homeowners quote to review @v1 [published]
 
 - **Given** a homeowners quote on a dwelling with a 24-year-old composition shingle roof
 - **When** the producer submits for rating (policy/home-policy/quote-homeowners-policy.feature.md)
 - **Then** an indicative premium is shown marked "subject to inspection"
 - **And** a four-point inspection is ordered before the quote can be bound
+
+[test: roofAgeOver20YearsRoutesAHomeownersQuoteToReview : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/StartQuoteInPortalTest.java#L102 ]
 
 ## Saved quote expires after 30 days @v1 [proposed]
 
