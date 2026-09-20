@@ -17,6 +17,8 @@ exposure, identifying hazards, and deciding what happens to the policy.
 - **Then** the dwelling limit is increased to the inspected value at the next anniversary
 - **And** the insured receives 45 days notice of the coverage and premium change
 
+[test: replacementCostIsMateriallyUnderstated : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReviewInspectionFindingsTest.java#L50 ]
+
 ## Report belongs to the wrong address @v1 [proposed]
 
 - **Given** a report whose photographs show a different street number than the risk address
@@ -31,6 +33,8 @@ exposure, identifying hazards, and deciding what happens to the policy.
 - **Then** the findings are accepted and the policy continues unchanged
 - **And** the review is closed with a "no action required" disposition
 
+[test: reportConfirmsTheRatedExposure : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReviewInspectionFindingsTest.java#L27 ]
+
 ## Undisclosed trampoline changes the liability decision @v1 [published]
 
 - **Given** an inspection photograph showing an unfenced trampoline
@@ -38,9 +42,13 @@ exposure, identifying hazards, and deciding what happens to the policy.
 - **Then** a trampoline liability exclusion endorsement is added at the next anniversary
 - **And** the insured may remove the exclusion by documenting safety netting and fencing
 
+[test: undisclosedTrampolineChangesTheLiabilityDecision : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReviewInspectionFindingsTest.java#L75 ]
+
 ## Unrepaired hazard leads to non-renewal @v1 [published]
 
 - **Given** an inspection documenting a deteriorated deck with missing guardrails
 - **When** the hazard is not corrected within the 60-day cure period
 - **Then** the policy is non-renewed for an uncorrected hazardous condition
 - **And** photographs from the report are retained with the notice
+
+[test: unrepairedHazardLeadsToNonRenewal : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReviewInspectionFindingsTest.java#L96 ]

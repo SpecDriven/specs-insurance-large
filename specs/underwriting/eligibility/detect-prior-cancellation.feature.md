@@ -17,11 +17,15 @@ by a carrier, and separating disqualifying reasons from benign ones.
 - **Then** the continuous-coverage discount is removed
 - **And** the submission is rated at the no-prior-insurance tier
 
+[test: gapInCoverageLongerThan30Days : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DetectPriorCancellationTest.java#L26 ]
+
 ## Insured-initiated cancellation is not disqualifying @v1 [published]
 
 - **Given** a prior policy cancelled at the insured's request after selling the vehicle
 - **When** prior coverage history is evaluated
 - **Then** the cancellation is classified as insured-requested and does not affect eligibility
+
+[test: insuredInitiatedCancellationIsNotDisqualifying : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DetectPriorCancellationTest.java#L45 ]
 
 ## Non-payment cancellation within the last year @v1 [published]
 
@@ -29,6 +33,8 @@ by a carrier, and separating disqualifying reasons from benign ones.
 - **When** prior coverage history is evaluated
 - **Then** the submission is referred and full payment in advance is required to bind
 - **And** the installment plan option is suppressed on the quote
+
+[test: nonPaymentCancellationWithinTheLastYear : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DetectPriorCancellationTest.java#L61 ]
 
 ## Non-renewal following a catastrophe is set aside @v1 [proposed]
 
@@ -43,3 +49,5 @@ by a carrier, and separating disqualifying reasons from benign ones.
 - **When** prior coverage history is evaluated
 - **Then** the submission is declined
 - **And** the prior carrier name and cancellation date are recorded on the decline
+
+[test: priorCancellationForMaterialMisrepresentation : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DetectPriorCancellationTest.java#L80 ]

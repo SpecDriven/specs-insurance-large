@@ -10,12 +10,16 @@ under imminent threat, usually a named storm, wildfire, or flood event.
 - **Then** the endorsement is blocked until the moratorium lifts
 - **And** the request is queued for automatic reprocessing after the lift
 
+[test: coverageIncreasesBlockedDuringAMoratorium : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyMoratoriumTest.java#L59 ]
+
 ## Existing policies continue in force @v1 [published]
 
 - **Given** 3,100 in-force policies inside a moratorium area
 - **When** the moratorium is active
 - **Then** all in-force coverage continues and claims are handled normally
 - **And** renewals within the area are processed without interruption
+
+[test: existingPoliciesContinueInForce : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyMoratoriumTest.java#L81 ]
 
 ## Moratorium lifts automatically after the event @v1 [published]
 
@@ -24,12 +28,16 @@ under imminent threat, usually a named storm, wildfire, or flood event.
 - **Then** the moratorium lifts at 6:00 AM Sunday unless a manual hold is placed
 - **And** agents are notified when binding reopens
 
+[test: moratoriumLiftsAutomaticallyAfterTheEvent : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyMoratoriumTest.java#L100 ]
+
 ## Named storm moratorium opens on a watch @v1 [published]
 
 - **Given** a hurricane watch posted for 9 coastal counties
 - **When** the moratorium is opened by the catastrophe desk
 - **Then** new business binding is suspended in those counties immediately
 - **And** the moratorium identifier, counties, and open time are broadcast to agents
+
+[test: namedStormMoratoriumOpensOnAWatch : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyMoratoriumTest.java#L35 ]
 
 ## Overlapping moratoria for different perils @v1 [proposed]
 

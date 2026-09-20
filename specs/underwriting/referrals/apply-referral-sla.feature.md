@@ -11,12 +11,16 @@ business hours from the moment the referral is queued
 - **Then** the referral is escalated to the team lead and flagged as breached
 - **And** the agent receives a status update with a revised expected decision time
 
+[test: breachEscalatesToTheTeamLead : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyReferralSlaTest.java#L54 ]
+
 ## Clock pauses while awaiting agent information @v1 [published]
 
 - **Given** an underwriter who requests a roof inspection report from the agent
 - **When** the referral is placed in "awaiting agent" status for 3 business days
 - **Then** the SLA clock is suspended for that period
 - **And** the clock resumes when the requested document is uploaded
+
+[test: clockPausesWhileAwaitingAgentInformation : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyReferralSlaTest.java#L75 ]
 
 ## Reassignment does not reset the clock @v1 [proposed]
 
@@ -44,8 +48,12 @@ business hours from the moment the referral is queued
 | Catastrophe moratorium | 2 hours         | 1 hour         | chief underwriter |
 | Complex commercial     | 2 business days | 1 day          | practice leader   |
 
+[test: standardReferralAnsweredWithinTheTarget : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyReferralSlaTest.java#L36 ]
+
 ## Weekend and holiday hours are not counted @v1 [published]
 
 - **Given** a referral queued at 4:00 PM on the Friday before a Monday holiday
 - **When** elapsed time is measured
 - **Then** only business hours from Tuesday morning count toward the target
+
+[test: weekendAndHolidayHoursAreNotCounted : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ApplyReferralSlaTest.java#L104 ]

@@ -18,6 +18,8 @@ party vendors, and tracking them to completion
 - **Then** an exterior inspection is ordered from the assigned vendor within 1 business day
 - **And** the order includes the risk address, contact phone, and inspection type
 
+[test: exteriorInspectionOrderedOnANewHomeownersPolicy : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderPropertyInspectionTest.java#L28 ]
+
 ## Inspection not returned by the vendor due date @v1 [proposed]
 
 - **Given** an exterior inspection ordered 21 days ago with no result
@@ -31,6 +33,8 @@ party vendors, and tracking them to completion
 - **When** the inspection is ordered
 - **Then** the vacancy is noted on the order so the vendor documents securement
 - **And** a loss control survey is also opened (order-loss-control-survey.feature.md)
+
+[test: inspectionOrderedOnAVacantDwelling : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderPropertyInspectionTest.java#L71 ]
 
 ## Interior inspection required above a value threshold @v1 [published]
 
@@ -46,6 +50,8 @@ party vendors, and tracking them to completion
 | $750,000 to $1,999,999  | interior + exterior  | 30 days         |
 | $2,000,000 and above    | engineer walkthrough | 45 days         |
 
+[test: interiorInspectionRequiredAboveAValueThreshold : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderPropertyInspectionTest.java#L50 ]
+
 ## Rush order after a mid-term coverage increase @v1 [proposed]
 
 - **Given** an insured who increases the dwelling limit from $690,000 to $980,000
@@ -59,3 +65,5 @@ party vendors, and tracking them to completion
 - **When** the no-access result is returned
 - **Then** the policy is flagged for non-renewal for refusal to permit inspection
 - **And** the insured receives a final access request with a 10-day deadline
+
+[test: vendorCannotGainAccessAfterThreeAttempts : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderPropertyInspectionTest.java#L90 ]

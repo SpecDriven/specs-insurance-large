@@ -12,6 +12,8 @@ and meeting the adverse action and state restriction requirements.
 - **Then** an adverse action notice naming the consumer reporting agency is mailed within 30 days
 - **And** the top four score reason codes are listed in the notice
 
+[test: adverseActionNoticeOnAnUnfavorableScore : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/VerifyInsuranceScoreTest.java#L66 ]
+
 ## Extraordinary life event triggers a rescore @v1 [proposed]
 
 - **Given** an insured who submits documentation of a catastrophic medical event
@@ -25,6 +27,8 @@ and meeting the adverse action and state restriction requirements.
 - **When** tiering is applied
 - **Then** the applicant is assigned the statutorily neutral tier
 - **And** the submission is not declined for lack of a score
+
+[test: noHitApplicantIsPlacedInTheNeutralTier : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/VerifyInsuranceScoreTest.java#L47 ]
 
 ## Score cannot be used in a prohibited state @v1 [proposed]
 
@@ -46,3 +50,5 @@ and meeting the adverse action and state restriction requirements.
 - **When** the score is mapped to the company tier table
 - **Then** the applicant is placed in tier B with a 0.94 tier factor
 - **And** the score model version and order date are stored on the submission
+
+[test: scoreMapsTheApplicantToARatingTier : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/VerifyInsuranceScoreTest.java#L29 ]

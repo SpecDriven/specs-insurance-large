@@ -18,6 +18,8 @@ capacity fills.
 - **Then** the zone aggregate increases by the full dwelling and contents limits
 - **And** the aggregate snapshot is timestamped for the nightly reinsurance report
 
+[test: aggregateUpdatedWhenAPolicyBinds : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ManageCatastropheAggregationTest.java#L30 ]
+
 ## Aggregation feed fails overnight @v1 [proposed]
 
 - **Given** the exposure aggregation job fails before completing
@@ -39,6 +41,8 @@ capacity fills.
 | 90% to 97%  | restricted   | open     | underwriter       |
 | 98% or more | closed       | reviewed | chief underwriter |
 
+[test: capacityThresholdTriggersASoftStop : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ManageCatastropheAggregationTest.java#L81 ]
+
 ## Earthquake and wind zones counted independently @v1 [published]
 
 - **Given** a risk sitting in both a wind zone and an earthquake zone
@@ -46,12 +50,16 @@ capacity fills.
 - **Then** its insured value is added to both zone aggregates
 - **And** a stop in one peril does not close the other
 
+[test: earthquakeAndWindZonesCountedIndependently : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ManageCatastropheAggregationTest.java#L54 ]
+
 ## Hard stop closes the zone to new business @v1 [published]
 
 - **Given** a zone aggregate at 98.4% of capacity
 - **When** a new submission is received for that zone
 - **Then** the submission is declined for catastrophe capacity
 - **And** the agent is shown the zone identifier and the expected reopen review date
+
+[test: hardStopClosesTheZoneToNewBusiness : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ManageCatastropheAggregationTest.java#L104 ]
 
 ## Reinsurance treaty renewal resets capacity @v1 [proposed]
 

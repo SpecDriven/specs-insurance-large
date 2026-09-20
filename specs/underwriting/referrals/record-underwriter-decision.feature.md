@@ -11,6 +11,8 @@ requires.
 - **Then** the submission returns to the agent as a bindable quote
 - **And** the decision, underwriter name, and timestamp are written to the file
 
+[test: acceptAsSubmittedReleasesTheQuote : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RecordUnderwriterDecisionTest.java#L29 ]
+
 ## Accept with conditions attaches requirements to the bind @v1 [published]
 
 - **Given** a homeowners referral on a 24-year-old roof
@@ -18,12 +20,16 @@ requires.
 - **Then** the condition is attached to the quote and printed on the binder
 - **And** the inspection order is created (../inspections/order-property-inspection.feature.md)
 
+[test: acceptWithConditionsAttachesRequirementsToTheBind : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RecordUnderwriterDecisionTest.java#L50 ]
+
 ## Counter-offer with a higher deductible @v1 [published]
 
 - **Given** a submission with a $500 wind deductible in a coastal territory
 - **When** the underwriter counters with a 2% named storm deductible
 - **Then** the counter-offer is presented to the agent with the revised premium
 - **And** the original quote remains available for 5 days for comparison
+
+[test: counterOfferWithAHigherDeductible : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RecordUnderwriterDecisionTest.java#L73 ]
 
 ## Decision reversed within the same business day @v1 [proposed]
 

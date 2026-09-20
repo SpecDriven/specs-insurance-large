@@ -31,6 +31,8 @@ all household members over the experience period.
 - **Then** a 5-year CLUE property report is retrieved for the applicant and the address
 - **And** every reported loss is matched to the applicant by name and date of birth
 
+[test: threeYearLossRunOrderedAtSubmission : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/CheckPriorLossHistoryTest.java#L28 ]
+
 ## Two or more water losses trigger a decline @v1 [published]
 
 - **Given** an applicant with water damage claims paid in 2022 and 2024
@@ -38,9 +40,13 @@ all household members over the experience period.
 - **Then** the submission is declined for water loss frequency
 - **And** the claim numbers supporting the decline are cited in the notice
 
+[test: twoOrMoreWaterLossesTriggerADecline : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/CheckPriorLossHistoryTest.java#L45 ]
+
 ## Weather-only losses are excluded from the frequency count @v1 [published]
 
 - **Given** three losses of which two are hail losses under a statewide catastrophe code
 - **When** the frequency rule is applied
 - **Then** only the single non-weather loss counts toward the frequency threshold
 - **And** the catastrophe codes used for the exclusion are recorded
+
+[test: weatherOnlyLossesAreExcludedFromTheFrequencyCount : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/CheckPriorLossHistoryTest.java#L71 ]
