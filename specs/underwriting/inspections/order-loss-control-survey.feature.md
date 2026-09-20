@@ -18,6 +18,8 @@ risks, distinct from the routine property inspection
 - **Then** an engineering loss control survey is ordered with a 45-day due date
 - **And** the survey scope includes wind mitigation features and roof attachment
 
+[test: surveyOrderedOnAHighValueCoastalDwelling : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderLossControlSurveyTest.java#L26 ]
+
 ## Survey scheduled outside the catastrophe season @v1 [proposed]
 
 - **Given** a coastal risk bound on June 20 during hurricane season
@@ -32,9 +34,13 @@ risks, distinct from the routine property inspection
 - **Then** the risk is moved from protection class 4 to class 9 at the anniversary
 - **And** the premium change is disclosed with 45 days notice
 
+[test: surveyUncoversAnUnprotectedFireExposure : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderLossControlSurveyTest.java#L65 ]
+
 ## Survey waived when a recent report exists @v1 [published]
 
 - **Given** an engineering survey completed 14 months ago with no open recommendations
 - **When** the annual survey rule evaluates the risk
 - **Then** the order is waived and the prior report is attached to the current term
 - **And** the waiver decision is recorded with the prior report date
+
+[test: surveyWaivedWhenARecentReportExists : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/OrderLossControlSurveyTest.java#L45 ]

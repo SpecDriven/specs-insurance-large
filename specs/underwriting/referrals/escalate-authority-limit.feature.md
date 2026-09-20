@@ -25,6 +25,8 @@ before any decision is binding.
 - **Then** the credit request escalates for approval
 - **And** the competitive justification must be documented before approval
 
+[test: discretionaryCreditAboveThePermittedBand : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/EscalateAuthorityLimitTest.java#L54 ]
+
 ## Escalation during a catastrophe moratorium @v1 [proposed]
 
 - **Given** a binding moratorium in effect for the county (../appetite/apply-moratorium.feature.md)
@@ -39,9 +41,13 @@ before any decision is binding.
 - **Then** the file escalates to the regional underwriting manager
 - **And** the underwriter may recommend but not approve the request
 
+[test: limitAboveTheUnderwritersAuthorityEscalates : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/EscalateAuthorityLimitTest.java#L28 ]
+
 ## Recommendation carried forward to the approver @v1 [published]
 
 - **Given** an escalated file with the underwriter's written recommendation to approve
 - **When** the regional manager opens the file
 - **Then** the recommendation, supporting documents, and rule failures are presented together
 - **And** the approver may accept, modify, or reject the recommendation
+
+[test: recommendationCarriedForwardToTheApprover : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/EscalateAuthorityLimitTest.java#L79 ]

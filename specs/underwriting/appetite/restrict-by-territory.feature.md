@@ -25,12 +25,16 @@ agency appointments, and rate-adequacy holds.
 - **Then** the submission is held until the quota resets on the first of the month
 - **And** the agency principal receives a quota notice
 
+[test: limitedWritingsQuotaPerAgency : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RestrictByTerritoryTest.java#L55 ]
+
 ## Renewals continue in a closed territory @v1 [published]
 
 - **Given** an in-force auto policy garaged in a closed territory
 - **When** the renewal is processed
 - **Then** the policy renews at the filed rate without appetite interference
 - **And** the renewal is tagged for the territory performance report
+
+[test: renewalsContinueInAClosedTerritory : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RestrictByTerritoryTest.java#L74 ]
 
 ## Territory closed to new personal auto business @v1 [published]
 
@@ -39,9 +43,13 @@ agency appointments, and rate-adequacy holds.
 - **Then** the submission is declined with reason "territory closed to new business"
 - **And** the agent is shown the closure effective date
 
+[test: territoryClosedToNewPersonalAutoBusiness : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RestrictByTerritoryTest.java#L28 ]
+
 ## Territory reopened after a rate filing is approved @v1 [published]
 
 - **Given** a closed territory awaiting a 12.4% rate filing
 - **When** the department of insurance approves the filing effective March 1
 - **Then** the territory reopens for new business on the filing's effective date
 - **And** held submissions are released for requoting at the approved rate
+
+[test: territoryReopenedAfterARateFilingIsApproved : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/RestrictByTerritoryTest.java#L114 ]

@@ -19,6 +19,8 @@ against company eligibility rules before a quote is released
 | Prior cancellation   | refer              | yes                        |
 | Residency in state   | decline            | no                         |
 
+[test: applicantFailsTwoOfFourScreeningChecks : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ScreenApplicantEligibilityTest.java#L62 ]
+
 ## Applicant residing outside the writing state @v1 [proposed]
 
 - **Given** an applicant with a mailing address in Nevada and a garaging address in Arizona
@@ -40,12 +42,16 @@ against company eligibility rules before a quote is released
 - **Then** the submission is marked eligible and rating proceeds without human review
 - **And** the screening result is stamped with the rule set version used
 
+[test: cleanApplicantClearsScreeningAutomatically : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ScreenApplicantEligibilityTest.java#L26 ]
+
 ## Screening result is valid for 60 days @v1 [published]
 
 - **Given** an eligibility screening completed on February 2
 - **When** the same submission is rebound on April 20
 - **Then** the stale screening result is discarded and screening reruns
 - **And** the new result replaces the prior one on the file
+
+[test: screeningResultIsValidFor60Days : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ScreenApplicantEligibilityTest.java#L86 ]
 
 ## Third-party data vendor is unavailable @v1 [proposed]
 
@@ -60,3 +66,5 @@ against company eligibility rules before a quote is released
 - **When** eligibility screening runs
 - **Then** the submission is declined
 - **And** the decline reason "no valid driver license" is recorded on the file
+
+[test: unlicensedDriverOnTheApplication : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ScreenApplicantEligibilityTest.java#L45 ]

@@ -20,12 +20,16 @@ go with it.
 - **Then** a single referral is opened listing both reasons in priority order
 - **And** duplicate referrals for the same submission are suppressed
 
+[test: multipleReasonsAreConsolidatedIntoOneReferral : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReferToUnderwriterTest.java#L51 ]
+
 ## No underwriter available in the routed queue @v1 [published]
 
 - **Given** the Texas property queue has no available underwriter during a catastrophe surge
 - **When** the referral cannot be assigned within 4 hours
 - **Then** it is reassigned to the overflow queue
 - **And** the reassignment is logged with the original routing decision
+
+[test: noUnderwriterAvailableInTheRoutedQueue : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReferToUnderwriterTest.java#L95 ]
 
 ## Quote expires while the referral is open @v1 [proposed]
 
@@ -47,9 +51,13 @@ go with it.
 - **Then** it is routed to the property team licensed in Texas
 - **And** the referral SLA clock starts (apply-referral-sla.feature.md)
 
+[test: referralRoutedByLineOfBusinessAndState : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReferToUnderwriterTest.java#L74 ]
+
 ## Submission referred for a single rule failure @v1 [published]
 
 - **Given** a submission that fails the loss frequency rule during screening
 - **When** the referral is created
 - **Then** the submission moves to the underwriting queue in "referred" status
 - **And** the failing rule and its evaluated values are attached to the referral
+
+[test: submissionReferredForASingleRuleFailure : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/ReferToUnderwriterTest.java#L28 ]

@@ -27,6 +27,8 @@ codes, construction types, limits, and the states in which each applies
 - **Then** submissions on or after October 1 are screened against the new entry
 - **And** submissions quoted before that date retain the prior appetite
 
+[test: appetiteEntryPublishedWithAnEffectiveDate : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DefineUnderwritingAppetiteTest.java#L28 ]
+
 ## Conflicting appetite entries for the same class @v1 [proposed]
 
 - **Given** a countrywide entry permitting a class and a state entry excluding it
@@ -41,8 +43,12 @@ codes, construction types, limits, and the states in which each applies
 - **Then** the submission is referred rather than declined
 - **And** the specific out-of-appetite feature is named on the referral
 
+[test: inAppetiteRiskWithAnOutOfAppetiteFeature : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DefineUnderwritingAppetiteTest.java#L91 ]
+
 ## Risk outside appetite is declined at screening @v1 [published]
 
 - **Given** a published appetite excluding dwellings with fuel oil tanks below grade
 - **When** a submission discloses a buried oil tank
 - **Then** the submission is declined with reason "outside published appetite"
+
+[test: riskOutsideAppetiteIsDeclinedAtScreening : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/underwriting/DefineUnderwritingAppetiteTest.java#L70 ]
