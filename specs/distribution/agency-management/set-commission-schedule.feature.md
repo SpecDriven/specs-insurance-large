@@ -13,6 +13,8 @@ portal (../agent-portal/view-book-of-business.feature.md).
 - **Then** the full $184 is charged back on the next commission statement
 - **And** a short-rate cancellation would instead charge back only the unearned portion
 
+[test: chargebackFollowsAFlatCancelledPolicy : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/SetCommissionScheduleTest.java#L76 ]
+
 ## Contingent commission requires a loss ratio threshold @v1 [published]
 
 - **Given** an agency with $1,400,000 of earned premium in the 2025 contingent year
@@ -20,6 +22,8 @@ portal (../agent-portal/view-book-of-business.feature.md).
 - **When** the contingent calculation runs after the 90-day development window
 - **Then** a contingent commission of 3% of earned premium is accrued
 - **And** no contingent is paid when the loss ratio is 60% or higher
+
+[test: contingentCommissionRequiresALossRatioThreshold : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/SetCommissionScheduleTest.java#L129 ]
 
 ## Mid-term rate change does not disturb prior transactions @v1 [proposed]
 
@@ -50,9 +54,13 @@ portal (../agent-portal/view-book-of-business.feature.md).
 | Renters          | 18%          | 15%     | 15%         |
 | Umbrella         | 11%          | 9%      | 9%          |
 
+[test: newBusinessAndRenewalRatesDifferByLine : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/SetCommissionScheduleTest.java#L33 ]
+
 ## Sub-producer split is honoured on shared business @v1 [published]
 
 - **Given** a placement shared between the writing agency and a referring agency at a 70/30 split
 - **When** commission is calculated on the bound premium
 - **Then** each agency code receives its share on its own statement
 - **And** the split is recorded on the policy for audit
+
+[test: subProducerSplitIsHonouredOnSharedBusiness : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/SetCommissionScheduleTest.java#L167 ]

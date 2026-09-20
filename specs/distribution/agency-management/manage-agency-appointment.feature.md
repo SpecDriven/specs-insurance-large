@@ -11,6 +11,8 @@ with the agency's licensing (../producer-licensing/verify-producer-license.featu
 - **Then** a Tennessee filing is submitted without disturbing the existing appointments
 - **And** the agency code gains Tennessee homeowners authority once acknowledged
 
+[test: addingAStateExpandsTheExistingAppointment : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ManageAgencyAppointmentTest.java#L58 ]
+
 ## Agency may not bind a line outside its appointment @v1 [proposed]
 
 - **Given** an agency appointed only for personal auto in Indiana
@@ -25,6 +27,8 @@ with the agency's licensing (../producer-licensing/verify-producer-license.featu
 - **Then** an appointment filing is transmitted to the Ohio DOI
 - **And** the appointment becomes effective on the date the DOI acknowledges the filing
 
+[test: appointmentIsFiledWithTheStateDepartmentOfInsurance : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ManageAgencyAppointmentTest.java#L28 ]
+
 ## Appointment lapses when the agency license expires @v1 [published]
 
 - **Given** an appointed agency whose agency license expires on 31 March 2026
@@ -33,6 +37,8 @@ with the agency's licensing (../producer-licensing/verify-producer-license.featu
 - **And** new business submissions from the agency are suspended
 - **And** in-force policies remain serviceable for renewal processing
 
+[test: appointmentLapsesWhenTheAgencyLicenseExpires : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ManageAgencyAppointmentTest.java#L121 ]
+
 ## Non-resident appointment requires a countersignature arrangement @v1 [published]
 
 - **Given** an agency domiciled in Ohio seeking a Kentucky appointment
@@ -40,6 +46,8 @@ with the agency's licensing (../producer-licensing/verify-producer-license.featu
 - **When** the Kentucky appointment is requested
 - **Then** the appointment is issued for personal lines only
 - **And** the commercial lines request is queued pending a countersignature arrangement
+
+[test: nonResidentAppointmentRequiresACountersignatureArrangement : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/ManageAgencyAppointmentTest.java#L91 ]
 
 ## Rejected DOI filing is surfaced for correction @v1 [proposed]
 

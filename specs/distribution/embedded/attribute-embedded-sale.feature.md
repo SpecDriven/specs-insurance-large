@@ -11,6 +11,8 @@ paid (../agency-management/set-commission-schedule.feature.md).
 - **Then** the change requires distribution management approval
 - **And** any resulting adjustment is made as a chargeback and re-credit, not a silent edit
 
+[test: attributionIsFrozenOnceTheFirstCommissionIsPaid : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/AttributeEmbeddedSaleTest.java#L103 ]
+
 ## Cancelled policy reverses partner credit @v1 [proposed]
 
 - **Given** an embedded policy flat cancelled 6 days after bind
@@ -32,9 +34,13 @@ paid (../agency-management/set-commission-schedule.feature.md).
 - **Then** the second partner receives full attribution
 - **And** the first partner's offer is closed as not taken
 
+[test: lastTouchWinsWhenTwoPartnersPresentTheSameRisk : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/AttributeEmbeddedSaleTest.java#L67 ]
+
 ## Policy bound from a partner token carries the partner code @v1 [published]
 
 - **Given** a bind request presenting quote token QT-4471-88 issued to partner LEASEHUB
 - **When** the policy is bound
 - **Then** the partner code LEASEHUB is stamped on the policy
 - **And** the licensed agency of record for that partner is recorded as producer
+
+[test: policyBoundFromAPartnerTokenCarriesThePartnerCode : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/AttributeEmbeddedSaleTest.java#L35 ]

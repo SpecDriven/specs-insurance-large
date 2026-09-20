@@ -11,12 +11,16 @@ whether the termination is for cause.
 - **Then** each policy transfers to the replacement agency at its next renewal
 - **And** commission on renewals after transfer accrues to the replacement agency
 
+[test: bookRollsToAReplacementAgencyAtRenewal : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TerminateAgencyRelationshipTest.java#L55 ]
+
 ## Insured may elect to follow the terminated agency @v1 [published]
 
 - **Given** an insured whose policy is scheduled to roll to a replacement agency
 - **When** the insured returns a signed agent-of-record letter naming a different agency
 - **Then** the agent-of-record letter takes precedence over the default roll
 - **And** the change is effective on the date the letter is received
+
+[test: insuredMayElectToFollowTheTerminatedAgency : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TerminateAgencyRelationshipTest.java#L98 ]
 
 ## Notice to affected policyholders goes out before renewal @v1 [proposed]
 
@@ -40,9 +44,13 @@ whether the termination is for cause.
 - **Then** the termination is effective 30 May 2026
 - **And** the agency may continue writing new business until the effective date
 
+[test: terminationWithoutCauseHonoursTheNoticePeriod : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TerminateAgencyRelationshipTest.java#L34 ]
+
 ## Unpaid premium owed by the agency is recovered @v1 [published]
 
 - **Given** a terminated agency holding $14,720 in collected but unremitted premium
 - **When** the final commission statement is produced
 - **Then** the outstanding premium is offset against earned commission
 - **And** any remaining shortfall is referred to collections
+
+[test: unpaidPremiumOwedByTheAgencyIsRecovered : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TerminateAgencyRelationshipTest.java#L134 ]

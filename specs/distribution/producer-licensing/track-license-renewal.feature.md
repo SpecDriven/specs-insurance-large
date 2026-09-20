@@ -21,6 +21,8 @@ production is never interrupted by an avoidable lapse.
 - **Then** reminders are sent at 90, 60, 30, and 7 days before expiration
 - **And** the 7-day reminder copies the agency principal
 
+[test: expirationRemindersEscalateAsTheDateApproaches : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TrackLicenseRenewalTest.java#L31 ]
+
 ## Lapsed license enters the state reinstatement window @v1 [published]
 
 - **Given** an Ohio license that expired 30 September 2026 without renewal
@@ -28,12 +30,16 @@ production is never interrupted by an avoidable lapse.
 - **Then** the license is restored without re-examination
 - **And** business written during the lapse is reviewed for validity
 
+[test: lapsedLicenseEntersTheStateReinstatementWindow : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TrackLicenseRenewalTest.java#L124 ]
+
 ## Multi-state producer is tracked per jurisdiction @v1 [published]
 
 - **Given** a producer licensed in Ohio, Kentucky, and Tennessee with different expiration dates
 - **When** the Kentucky license approaches expiration
 - **Then** only Kentucky production is at risk and only Kentucky is flagged
 - **And** Ohio and Tennessee authority is unaffected
+
+[test: multiStateProducerIsTrackedPerJurisdiction : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TrackLicenseRenewalTest.java#L86 ]
 
 ## Producer departure stops reminders @v1 [proposed]
 
@@ -48,3 +54,5 @@ production is never interrupted by an avoidable lapse.
 - **When** the registry reports a renewed license with a new expiration of 30 September 2028
 - **Then** the tracking flag is cleared
 - **And** the new expiration date drives the next reminder cycle
+
+[test: renewalConfirmedByTheRegistryClearsTheTracker : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/distribution/TrackLicenseRenewalTest.java#L151 ]
