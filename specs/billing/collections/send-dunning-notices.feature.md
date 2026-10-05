@@ -27,7 +27,7 @@ insured's elected delivery channel.
 - **Then** the pending notice is cancelled before generation
 - **And** a paid-in-full confirmation is sent instead
 
-## Final demand requires physical mail in New York @v1 [proposed]
+## Final demand requires physical mail in NY @v1 [proposed]
 
 - **Given** a New York policy at 31 days past due with email-only delivery elected
 - **When** the final demand notice is produced
