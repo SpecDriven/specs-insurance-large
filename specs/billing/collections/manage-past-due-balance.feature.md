@@ -7,6 +7,8 @@ nonpayment cancellation path (policy/auto-policy/cancel-policy.feature.md).
 
 ## Active claim does not excuse the premium @v1 [proposed]
 
+[ff:FF_SCenario_One:on]
+
 - **Given** an open collision claim on a policy with a past due balance
 - **When** the nonpayment cancellation would take effect
 - **Then** the cancellation proceeds on schedule
