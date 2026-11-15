@@ -2,7 +2,7 @@
 
 Turning an accepted quote into an in-force policy.
 
-## Bind from an active quote @v1 [published]
+## S1: Bind from an active quote @v1 [published]
 
 - **Given** a prospect has an active quote
 - **And** the down payment for the first installment has cleared
@@ -13,7 +13,7 @@ Turning an accepted quote into an in-force policy.
 
 [test: bindFromAnActiveQuote : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/BindAutoPolicyTest.java#L41 ]
 
-## Effective date may not be backdated @v1 [published]
+## S2: Effective date may not be backdated @v1 [published]
 
 - **Given** a prospect has an active quote
 - **When** they request an effective date earlier than today
@@ -21,8 +21,12 @@ Turning an accepted quote into an in-force policy.
 
 [test: effectiveDateMayNotBeBackdated : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/BindAutoPolicyTest.java#L103 ]
 
-## Uninsured motorist rejection form @v1 [published]
+## S3: Uninsured motorist rejection form @v1 [published]
 
 - **Given** a prospect declines uninsured motorist coverage
 - **When** the policy is bound
 - **Then** a signed UM/UIM rejection form is required before issuance
+
+## S4: irina test @v1 [proposed]
+
+testing

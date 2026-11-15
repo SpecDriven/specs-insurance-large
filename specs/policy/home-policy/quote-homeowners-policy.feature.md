@@ -2,7 +2,7 @@
 
 HO-3 quotes for owner-occupied homes — the property side of the book.
 
-## Basic homeowners quote @v1 [published]
+## S1: Basic homeowners quote @v1 [published]
 
 [Jira:INS-123](https://jira.com/INS-123)
 
@@ -18,14 +18,14 @@ HO-3 quotes for owner-occupied homes — the property side of the book.
 
 [test: basicHomeownersQuote : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/policy/QuoteHomeownersPolicyTest.java#L32 ]
 
-## Flood damage is excluded @v1 [published]
+## S2: Flood damage is excluded @v1 [published]
 
 - **Given** the home sits in a FEMA special flood hazard area
 - **When** the quote is presented
 - **Then** it prominently notes that flood damage is excluded
 - **And** the prospect is referred to a separate flood policy
 
-## Old roof requires inspection @v1 [published]
+## S3: Old roof requires inspection @v1 [published]
 
 - **Given** the roof is more than 20 years old
 - **When** the prospect requests a quote

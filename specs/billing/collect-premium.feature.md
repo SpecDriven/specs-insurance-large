@@ -4,7 +4,7 @@
 
 **Assigned:** Stefan Rudi
 
-## Failed autopay starts the grace period @v1 [published]
+## S1: Failed autopay starts the grace period @v1 [published]
 
 [Jira:ABC-224](https://jira.com/ABC-224)
 
@@ -16,7 +16,7 @@
 
 [test: failedAutopayStartsTheGracePeriod : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L78 ]
 
-## Monthly installment plan @v1 [published]
+## S2: Monthly installment plan @v1 [published]
 
 - **Given** a bound policy with a $600 six-month premium
 - **When** the insured chooses the monthly installment plan
@@ -31,12 +31,20 @@
 
 [test: monthlyInstallmentPlan : https://github.com/SpecDriven/insurance-cap-java/blob/main/srv/src/test/java/com/acme/insurance/billing/CollectPremiumTest.java#L35 ]
 
-## test excalidraw @v1 [proposed]
+## S3: test excalidraw @v1 [proposed]
+
+[br:Business Rule One:on]
 
 test of excalidraw
 ![diagram.excalidraw](/api/images/diagram-excalidraw-60753914.svg)
 
-## Unpaid balance triggers a cancellation notice @v1 [published]
+|        |       |
+| ------ | ----- |
+| col1   | col2  |
+| blaaaa |       |
+| test 2 | test2 |
+
+## S4: Unpaid balance triggers a cancellation notice @v1 [published]
 
 - **Given** an installment still unpaid at the end of the grace period
 - **When** the nightly billing job runs

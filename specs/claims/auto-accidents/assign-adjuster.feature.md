@@ -2,7 +2,7 @@
 
 Route each newly opened claim to the right adjuster.
 
-## Assign by estimated damage @v1 [published]
+## S1: Assign by estimated damage @v1 [published]
 
 - **Given** a newly opened collision claim
 - **When** the initial damage estimate is recorded
@@ -14,14 +14,7 @@ Route each newly opened claim to the right adjuster.
 | $5,000 – $25,000 | field adjuster                            |
 | over $25,000     | senior field adjuster + supervisor review |
 
-## Exception Escalation @v1 [proposed]
-
-Under these circumstances, the case must be escalated.
-
-* When this is a VIP customer with a new car.
-* When there is a code assigned to the policy.
-
-## Injury claims go to a casualty adjuster @v1 [proposed]
+## S2: Injury claims go to a casualty adjuster @v1 [proposed]
 
 - **Given** a newly opened claim
 - **When** the first notice of loss mentions any injury
